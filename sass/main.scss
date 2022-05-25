@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: aliceblue;
+    background-color: white;
     font-family: 'Forum', cursive;
 }
 
@@ -43,6 +43,7 @@ body{
 .hero{
     padding-top: 5rem;
     padding-right: 5rem;
+
 }
 
 .header{
@@ -69,19 +70,27 @@ li{
 }
 
 a{
+    font: bold;
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding-left: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    transition: .4s ease;
+}
+
+a::after{
+    color: white;
 }
 
 .navlink{
     font-size: 5rem;
 }
 
-.navlink:hover{
-    color: gray;
-    transition: all 0.2s ease-in-out;
-}
+// .navlink:hover{
+//     color: gray;
+//     transition: all 0.2s ease-in-out;
+// }
 
 .exit{
     position: absolute;
@@ -116,3 +125,4 @@ a{
     margin-top: -20px;
     opacity: 0;
 }
+

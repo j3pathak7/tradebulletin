@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: white;
   font-family: 'Forum', cursive;
 }
 
@@ -91,19 +91,22 @@ li {
 }
 
 a {
+  font: bold;
   color: white;
   text-decoration: none;
   padding-left: 100px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+a::after {
+  color: white;
 }
 
 .navlink {
   font-size: 5rem;
-}
-
-.navlink:hover {
-  color: gray;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .exit {
