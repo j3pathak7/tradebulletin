@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: 'Forum', cursive;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+    width: 100vw;
+}
+
+.wrapper .sidebar{
+    position: sticky;
+    width: 150px;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right:2px solid black;
+}
+
+.wrapper .rightpanel{
+    padding-left: 70px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    padding: 10px;
+    text-align: end;   
+}
+
+.hero{
+    padding-top: 5rem;
+    padding-right: 5rem;
+}
+
+.header{
+    padding-top: 10px;
+}
